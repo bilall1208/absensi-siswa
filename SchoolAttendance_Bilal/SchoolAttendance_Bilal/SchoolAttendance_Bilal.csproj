@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C79C16A-29CB-4444-BC93-B1976512029C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>T1_Bilal_XIRPLA</RootNamespace>
+    <AssemblyName>T1_Bilal_XIRPLA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FAbsensi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAbsensi.Designer.cs">
+      <DependentUpon>FAbsensi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="FBilalHal10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBilalHal10.Designer.cs">
+      <DependentUpon>FBilalHal10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDashboard.Designer.cs">
+      <DependentUpon>FDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKelas.Designer.cs">
+      <DependentUpon>FKelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLaporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLaporan.Designer.cs">
+      <DependentUpon>FLaporan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTambahDataKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTambahDataKelas.Designer.cs">
+      <DependentUpon>FTambahDataKelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSiswa.Designer.cs">
+      <DependentUpon>FSiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTambahDataSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTambahDataSiswa.Designer.cs">
+      <DependentUpon>FTambahDataSiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGuru.Designer.cs">
+      <DependentUpon>FormGuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGuru.Designer.cs">
+      <DependentUpon>FGuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTambahDataGuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTambahDataGuru.Designer.cs">
+      <DependentUpon>FTambahDataGuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guna\UI2\WinForms\guna2ShadowPanel1.cs" />
+    <Compile Include="KFBilal.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FAbsensi.resx">
+      <DependentUpon>FAbsensi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBilalHal10.resx">
+      <DependentUpon>FBilalHal10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDashboard.resx">
+      <DependentUpon>FDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGuru.resx">
+      <DependentUpon>FGuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKelas.resx">
+      <DependentUpon>FKelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLaporan.resx">
+      <DependentUpon>FLaporan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTambahDataGuru.resx">
+      <DependentUpon>FTambahDataGuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTambahDataKelas.resx">
+      <DependentUpon>FTambahDataKelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSiswa.resx">
+      <DependentUpon>FSiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTambahDataSiswa.resx">
+      <DependentUpon>FTambahDataSiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGuru.resx">
+      <DependentUpon>FormGuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
